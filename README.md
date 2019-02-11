@@ -1,37 +1,46 @@
-## Welcome to GitHub Pages
+## My GitHub projects
+Here are some of my more interesting (depending on who you ask) programming projects.
 
-You can use the [editor on GitHub](https://github.com/Eggbertx/eggbertx.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+### Gochan
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+A semi-standalone Futaba imageboard server written in [Go](https://golang.org)
 
-### Markdown
+[GitHub repo](https://github.com/eggbertx/gochan) | [Website](https://gochan.org)
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Language: Go (server), HTML (templates), JavaScript, and Sass/CSS
 
-```markdown
-Syntax highlighted code block
+![Image](gochan-thread.png)
 
-# Header 1
-## Header 2
-### Header 3
+___
+### QtSphere IDE
 
-- Bulleted
-- List
+A cross-platform IDE for the Sphere game engine using the Qt toolkit
 
-1. Numbered
-2. List
+[GitHub repo](https://github.com/eggbertx/QtSphere-IDE)
 
-**Bold** and _Italic_ and `Code` text
+Language: C++
 
-[Link](url) and ![Image](src)
-```
+![Screenshot](qtsphere-map.png)
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+___
+### OmniChip-8
 
-### Jekyll Themes
+A CHIP-8 emulator with the goal of being compatible with as many systems as possible
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Eggbertx/eggbertx.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+Language: C (C89)
 
-### Support or Contact
+[GitHub repo](https://github.com/eggbertx/OmniChip8)
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+![OmniChip-8's SDL and ncurses builds running MAZE](omnichip8.png)
+
+
+___
+### Eggbertx's Challenge
+
+A Chip's Challenge implementation written in JavaScript using the [miniSphere](https://github.com/fatcerberus/minisphere) game engine
+
+Language: JavaScript (ECMAScript 6+)
+
+[GitHub repo](https://github.com/Eggbertx/Eggbertxs-Challenge)
+
+![Screenshot](eggbertxs-challenge.png)
