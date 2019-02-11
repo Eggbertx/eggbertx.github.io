@@ -3,13 +3,13 @@ Here are some of my more interesting (depending on who you ask) programming proj
 
 ### Gochan
 
-A semi-standalone Futaba imageboard server written in [Go](https://golang.org)
+A semi-standalone Futaba-style imageboard server written in [Go](https://golang.org)
 
 [GitHub repo](https://github.com/eggbertx/gochan) | [Website](https://gochan.org)
 
 Language: Go (server), HTML (templates), JavaScript, and Sass/CSS
 
-![Image](gochan-thread.png)
+![Board page screenshot](gochan-thread.png)
 
 ___
 ### QtSphere IDE
@@ -20,7 +20,7 @@ A cross-platform IDE for the Sphere game engine using the Qt toolkit
 
 Language: C++
 
-![Screenshot](qtsphere-map.png)
+![Map editor screenshot](qtsphere-map.png)
 
 ___
 ### OmniChip-8
