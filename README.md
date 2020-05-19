@@ -5,7 +5,7 @@ Here are some of my more interesting (depending on who you ask) programming proj
 
 A semi-standalone Futaba-style imageboard server written in [Go](https://golang.org)
 
-[GitHub repo](https://github.com/eggbertx/gochan) | [Website](https://gochan.org)
+[GitHub repo](https://github.com/gochan-org/gochan) | [Website](https://gochan.org)
 
 Language: Go (server), HTML (templates), JavaScript, and Sass/CSS
 
