@@ -25,13 +25,13 @@ Language: C++
 ___
 ### OmniChip-8
 
-A CHIP-8 emulator with the goal of being compatible with as many systems as possible
+A CHIP-8 emulator with the goal of being compatible with as many systems as possible. It currently supports SDL, (n)curses, GameBoy, and Commodore 64.
 
 Language: C (C89)
 
 [GitHub repo](https://github.com/eggbertx/OmniChip8)
 
-![OmniChip-8's SDL and ncurses builds running MAZE](omnichip8.png)
+![OmniChip-8 running IBM on different platforms](omnichip8.png)
 
 
 ___
