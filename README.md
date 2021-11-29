@@ -37,9 +37,9 @@ Language: C (C89)
 ___
 ### Eggbertx's Challenge
 
-A Chip's Challenge implementation written in JavaScript using the [miniSphere](https://github.com/fatcerberus/minisphere) game engine
+A Chip's Challenge implementation written in GDScript using the [Godot](https://godotengine.org/) game engine
 
-Language: JavaScript (ECMAScript 6+)
+Language: GDScript
 
 [GitHub repo](https://github.com/Eggbertx/Eggbertxs-Challenge)
 
