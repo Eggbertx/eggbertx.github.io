@@ -12,17 +12,6 @@ Language: Go (server), HTML (templates), JavaScript, and Sass/CSS
 ![Board page screenshot](gochan-thread.png)
 
 ___
-### QtSphere IDE
-
-A cross-platform IDE for the Sphere game engine using the Qt toolkit
-
-[GitHub repo](https://github.com/eggbertx/QtSphere-IDE)
-
-Language: C++
-
-![Map editor screenshot](qtsphere-map.png)
-
-___
 ### OmniChip-8
 
 A CHIP-8 emulator with the goal of being compatible with as many systems as possible. It currently supports SDL, (n)curses, GameBoy, and Commodore 64.
@@ -32,7 +21,6 @@ Language: C (C89)
 [GitHub repo](https://github.com/eggbertx/OmniChip8)
 
 ![OmniChip-8 running IBM on different platforms](omnichip8.png)
-
 
 ___
 ### Eggbertx's Challenge
@@ -44,3 +32,14 @@ Language: GDScript
 [GitHub repo](https://github.com/Eggbertx/Eggbertxs-Challenge)
 
 ![Screenshot](eggbertxs-challenge.png)
+
+___
+### QtSphere IDE
+
+A cross-platform IDE for the Sphere game engine using the Qt toolkit
+
+[GitHub repo](https://github.com/eggbertx/QtSphere-IDE)
+
+Language: C++
+
+![Map editor screenshot](qtsphere-map.png)
