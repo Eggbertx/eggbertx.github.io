@@ -12,6 +12,17 @@ Language: Go (server), HTML (templates), TypeScript, and Sass/CSS
 ![Board page screenshot](gochan-thread.png)
 
 ___
+### GD6502
+
+A [6502](https://en.wikipedia.org/wiki/MOS_Technology_6502) emulator written in GDScript using the [Godot](https://godotengine.org/) game engine
+
+Language: GDScript
+
+GitHub repos: [IDE](https://github.com/Eggbertx/GD6502-IDE), [core](https://github.com/Eggbertx/GD6502)
+
+![GD6502 IDE screenshot](./gd6502.png)
+
+___
 ### OmniChip-8
 
 A CHIP-8 emulator with the goal of being compatible with as many systems as possible. It currently supports SDL, (n)curses, GameBoy, and Commodore 64.
