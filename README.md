@@ -36,7 +36,7 @@ Language: Python
 ___
 ### OmniChip-8
 
-A CHIP-8 emulator with the goal of being compatible with as many systems as possible. It currently supports SDL, (n)curses, GameBoy, and Commodore 64.
+A CHIP-8 emulator with the goal of being compatible with as many systems as possible. It currently supports SDL2, (n)curses, GameBoy, Commodore 64, and WebAssembly. Try it out in a browser [here](/oc8/oc8.html).
 
 Language: C (C89), tests using CTest+gtest in C++
 

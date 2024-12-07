@@ -1,0 +1,61 @@
+<!doctype HTML>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OmniChip-8 + Emscripten</title>
+<link rel="stylesheet" href="/assets/css/style.css">
+<style>
+body {
+	font-family: sans-serif;
+	overflow: hidden;
+}
+canvas {
+	display: block;
+}
+#status {
+	background-color: hsl(60,20%,90%);
+	text-align: center;
+	height: 0;
+}
+</style>
+</head>
+<body>
+<header>
+<h1><a href="https://eggbertx.github.io/">Eggbertx's GitHub Pages Site</a></h1>
+<img src="https://avatars2.githubusercontent.com/u/76852?s=460&v=4" alt="Logo" />
+<p></p>
+<p class="view"><a href="https://github.com/Eggbertx">View My GitHub Profile</a></p>
+</header>
+<section style="min-width: 640px;">
+	<div id="status">Downloading...</div>
+	<canvas id="canvas" width="64" height="32" oncontextmenu="event.preventDefault()"></canvas>
+	<textarea id="output" rows="8" cols="60"></textarea>
+	<script type='text/javascript'>
+	var Module = {
+		print: (function(text) {
+			var element = document.getElementById('output');
+			if (element) element.value = ''; // clear browser cache
+			return function(text) {
+				if (arguments.length > 1) text = Array.prototype.slice.call(arguments).join(' ');
+				console.log(text);
+				if (element) {
+					element.value += text + "\n";
+					element.scrollTop = element.scrollHeight; // focus on bottom
+				}
+			};
+		})(),
+		printErr: function(text) { console.error(text); },
+		setStatus: (function(text) {
+			var element = document.getElementById('status');
+			if (element) element.textContent = ''; // clear browser cache
+			return function(text) { element.textContent = text; };
+		})(),
+		canvas: document.getElementById('canvas'),
+	};
+	</script>
+	<script async type="text/javascript" src="oc8.js"></script>
+</section>
+</body>
+</html>
+
