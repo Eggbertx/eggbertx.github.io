@@ -1,7 +1,7 @@
-## My GitHub projects
+# My GitHub projects
 Here are some of my main programming projects.
 
-### Gochan
+## Gochan
 
 A semi-standalone Futaba-style imageboard server written in [Go](https://golang.org)
 
@@ -12,7 +12,7 @@ Language: Go (server), HTML (templates), TypeScript, and SCSS
 ![Board page screenshot](gochan-thread.png)
 
 ___
-### GD6502
+## GD6502
 
 A [6502](https://en.wikipedia.org/wiki/MOS_Technology_6502) emulator written in GDScript using the [Godot](https://godotengine.org/) game engine
 
@@ -20,10 +20,10 @@ Language: GDScript
 
 GitHub repos: [IDE](https://github.com/Eggbertx/GD6502-IDE), [core](https://github.com/Eggbertx/GD6502)
 
-![GD6502 IDE screenshot](./gd6502.png)
+![GD6502 IDE screenshot](./gd6502.gif)
 
 ___
-### QtSphere IDE
+## QtSphere IDE
 
 A cross-platform IDE/resource editor for the Sphere game engine using the Qt toolkit via [PySide6](https://doc.qt.io/qtforpython-6/)
 
@@ -34,7 +34,7 @@ Language: Python
 ![Map editor screenshot](qtsphere-map.png)
 
 ___
-### OmniChip-8
+## OmniChip-8
 
 A CHIP-8 emulator with the goal of being compatible with as many systems as possible. It currently supports SDL2, (n)curses, GameBoy, Commodore 64, and WebAssembly. Try it out in a browser [here](/oc8/oc8.html).
 
@@ -45,7 +45,7 @@ Language: C (C89), tests using CTest+gtest in C++
 ![OmniChip-8 running my simple test project](omnichip8.png)
 
 ___
-### Eggbertx's Challenge
+## Eggbertx's Challenge
 
 A Chip's Challenge implementation written in GDScript using the [Godot](https://godotengine.org/) game engine
 
@@ -56,7 +56,18 @@ Language: GDScript
 ![Eggbertx's Challenge screenshot](eggbertxs-challenge.png)
 
 ___
-### Simple 3D Raycaster
+## Thy Dungeonman (Apple II/IIe demake)
+
+A demake of [Thy Dungeonman](https://homestarrunner.com/dungeonman) for Apple II and Apple II Enhanced. Thy Dungeonman is a flash game that parodies traditional text adventure games.
+
+Language: C
+
+[GitHub repo](https://github.com/Eggbertx/ThyDungeonman-Demake)
+
+![Screenshot](thy-dungeonman-demake.png)
+
+___
+## Simple 3D Raycaster
 
 A simple project to teach myself how to do traditional Wolfenstein 3D style raycasting, as well as CMake usage
 
