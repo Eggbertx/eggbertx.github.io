@@ -1,0 +1,10 @@
+main.oc8-demo {
+	display: block;
+	text-align: center;
+}
+
+section.oc8-player {
+	margin: 0 auto;
+	width: 50%;
+	display: block;
+}

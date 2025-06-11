@@ -1,0 +1,46 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import PageHeader from "../components/PageHeader.astro";
+import PageFooter from "../components/PageFooter.astro";
+import "../styles/global.css"
+import "../styles/oc8.css"
+
+const pageTitle = "OmniChip-8 Demo";
+---
+
+<BaseLayout pageTitle={pageTitle}>
+	<PageHeader pageTitle={pageTitle} />
+	<main class="oc8-demo">
+		<section class="oc8-player">
+			<div id="status">Downloading...</div>
+			<p class="back"><a href="/">Back to project list</a></p>
+			<canvas id="canvas" width="64" height="32" oncontextmenu="event.preventDefault()"></canvas>
+			<textarea id="output" rows="8" cols="60"></textarea>
+		</section>
+		<script is:inline type="text/javascript" defer>
+		var Module = {
+			print: (function(text) {
+				var element = document.getElementById('output');
+				if (element) element.value = ''; // clear browser cache
+				return function(text) {
+					if (arguments.length > 1) text = Array.prototype.slice.call(arguments).join(' ');
+					console.log(text);
+					if (element) {
+						element.value += text + "\n";
+						element.scrollTop = element.scrollHeight; // focus on bottom
+					}
+				};
+			})(),
+			printErr: function(text) { console.error(text); },
+			setStatus: (function(text) {
+				var element = document.getElementById('status');
+				if (element) element.textContent = ''; // clear browser cache
+				return function(text) { element.textContent = text; };
+			})(),
+			canvas: document.getElementById('canvas'),
+		};
+		</script>
+		<script async is:inline type="text/javascript" src="/oc8-res/oc8.js"></script>
+	</main>
+	<PageFooter />
+</BaseLayout>

@@ -30,9 +30,10 @@
     },
     {
         "name": "OmniChip-8",
-        "description": "A CHIP-8 emulator with the goal of being compatible with as many systems as possible. It currently supports SDL2, (n)curses, GameBoy, Commodore 64, and WebAssembly. Try it out in a browser here.",
+        "description": "A CHIP-8 emulator with the goal of being compatible with as many systems as possible. It currently supports SDL2, (n)curses, GameBoy, Commodore 64, and WebAssembly.",
         "urls": [
-            {"url": "https://github.com/eggbertx/OmniChip8", "text": "GitHub Repo"}
+            {"url": "https://github.com/eggbertx/OmniChip8", "text": "GitHub Repo"},
+            {"url": "/oc8", "text": "Try It Out"}
         ],
         "languageDetails": "C (C89)",
         "thumb": "/images/omnichip8.png"
