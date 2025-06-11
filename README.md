@@ -1,78 +1,47 @@
-# My GitHub projects
-Here are some of my main programming projects.
+# Astro Starter Kit: Minimal
 
-## Gochan
+```sh
+npm create astro@latest -- --template minimal
+```
 
-A semi-standalone Futaba-style imageboard server written in [Go](https://golang.org)
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/minimal)
+[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/minimal)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/minimal/devcontainer.json)
 
-[GitHub repo](https://github.com/gochan-org/gochan) | [Website](https://gochan.org)
+> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
 
-Language: Go (server), HTML (templates), TypeScript, and SCSS
+## 🚀 Project Structure
 
-![Board page screenshot](gochan-thread.png)
+Inside of your Astro project, you'll see the following folders and files:
 
-___
-## GD6502
+```text
+/
+├── public/
+├── src/
+│   └── pages/
+│       └── index.astro
+└── package.json
+```
 
-A [6502](https://en.wikipedia.org/wiki/MOS_Technology_6502) emulator written in GDScript using the [Godot](https://godotengine.org/) game engine
+Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
 
-Language: GDScript
+There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
 
-GitHub repos: [IDE](https://github.com/Eggbertx/GD6502-IDE), [core](https://github.com/Eggbertx/GD6502)
+Any static assets, like images, can be placed in the `public/` directory.
 
-![GD6502 IDE screenshot](./gd6502.gif)
+## 🧞 Commands
 
-___
-## QtSphere IDE
+All commands are run from the root of the project, from a terminal:
 
-A cross-platform IDE/resource editor for the Sphere game engine using the Qt toolkit via [PySide6](https://doc.qt.io/qtforpython-6/)
+| Command                   | Action                                           |
+| :------------------------ | :----------------------------------------------- |
+| `npm install`             | Installs dependencies                            |
+| `npm run dev`             | Starts local dev server at `localhost:4321`      |
+| `npm run build`           | Build your production site to `./dist/`          |
+| `npm run preview`         | Preview your build locally, before deploying     |
+| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
+| `npm run astro -- --help` | Get help using the Astro CLI                     |
 
-[GitHub repo](https://github.com/eggbertx/QtSphere-IDE)
+## 👀 Want to learn more?
 
-Language: Python
-
-![Map editor screenshot](qtsphere-map.png)
-
-___
-## OmniChip-8
-
-A CHIP-8 emulator with the goal of being compatible with as many systems as possible. It currently supports SDL2, (n)curses, GameBoy, Commodore 64, and WebAssembly. Try it out in a browser [here](/oc8/oc8.html).
-
-Language: C (C89), tests using CTest+gtest in C++
-
-[GitHub repo](https://github.com/eggbertx/OmniChip8)
-
-![OmniChip-8 running my simple test project](omnichip8.png)
-
-___
-## Eggbertx's Challenge
-
-A Chip's Challenge implementation written in GDScript using the [Godot](https://godotengine.org/) game engine
-
-Language: GDScript
-
-[GitHub repo](https://github.com/Eggbertx/Eggbertxs-Challenge)
-
-![Eggbertx's Challenge screenshot](eggbertxs-challenge.png)
-
-___
-## Thy Dungeonman (Apple II/IIe demake)
-
-A demake of [Thy Dungeonman](https://homestarrunner.com/dungeonman) for Apple II and Apple II Enhanced. Thy Dungeonman is a flash game that parodies traditional text adventure games.
-
-Language: C
-
-[GitHub repo](https://github.com/Eggbertx/ThyDungeonman-Demake)
-
-![Screenshot](thy-dungeonman-demake.png)
-
-___
-## Simple 3D Raycaster
-
-A simple project to teach myself how to do traditional Wolfenstein 3D style raycasting, as well as CMake usage
-
-Language: C
-
-[GitHub repo](https://github.com/Eggbertx/simple-3d-raycaster)
-
-![Demonstration of s3d in a simple maze](simple3draycaster.gif)
+Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).

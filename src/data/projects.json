@@ -1,0 +1,17 @@
+[
+    {
+        "name": "Gochan",
+        "description": "An imageboard written in Go",
+        "urls": [
+            {"repo": "https://github.com/gochan-org/gochan", "text": "Repo"},
+            {"repo": "https://gochan.org/", "text": "Site"}
+        ],
+        "thumb": ""
+    },
+    {
+        "name": "Project B",
+        "description": "A web application for managing tasks.",
+        "url": "https://github.com",
+        "thumb": ""
+    }
+]
