@@ -1,17 +1,68 @@
 [
     {
         "name": "Gochan",
-        "description": "An imageboard written in Go",
+        "description": "A semi-standalone Futaba-style imageboard server written in Go",
         "urls": [
-            {"repo": "https://github.com/gochan-org/gochan", "text": "Repo"},
-            {"repo": "https://gochan.org/", "text": "Site"}
+            {"url": "https://github.com/gochan-org/gochan", "text": "Repo"},
+            {"url": "https://gochan.org/", "text": "Website"}
         ],
-        "thumb": ""
+        "languageDetails": "Go (server), HTML (templates), TypeScript, and SCSS",
+        "thumb": "/images/gochan-thread.png"
     },
     {
-        "name": "Project B",
-        "description": "A web application for managing tasks.",
-        "url": "https://github.com",
-        "thumb": ""
+        "name": "GD6502",
+        "description": "A 6502 emulator written in GDScript using the Godot game engine",
+        "urls": [
+            {"url": "https://github.com/eggbertx/GD6502-IDE", "text": "IDE"},
+            {"url": "https://github.com/eggbertx/GD6502", "text": "Core"}
+        ],
+        "languageDetails": "GDScript",
+        "thumb": "/images/gd6502.gif"
+    },
+    {
+        "name": "QtSphere IDE",
+        "description": "A cross-platform IDE/resource editor for the Sphere game engine using the Qt toolkit via PySide6",
+        "urls": [
+            {"url": "https://github.com/eggbertx/QtSphere-IDE", "text": "GitHub Repo"}
+        ],
+        "languageDetails": "Python",
+        "thumb": "/images/qtsphere-map.png"
+    },
+    {
+        "name": "OmniChip-8",
+        "description": "A CHIP-8 emulator with the goal of being compatible with as many systems as possible. It currently supports SDL2, (n)curses, GameBoy, Commodore 64, and WebAssembly. Try it out in a browser here.",
+        "urls": [
+            {"url": "https://github.com/eggbertx/OmniChip8", "text": "GitHub Repo"}
+        ],
+        "languageDetails": "C (C89)",
+        "thumb": "/images/omnichip8.png"
+    },
+    {
+        "name": "Eggbertx’s Challenge",
+        "description": "A Chip’s Challenge implementation written in GDScript using the Godot game engine",
+        "urls": [
+            {"url": "https://github.com/Eggbertx/Eggbertxs-Challenge", "text": "GitHub Repo"}
+        ],
+        "languageDetails": "GDScript",
+        "thumb": "/images/eggbertxs-challenge.png"
+    },
+    {
+        "name": "Thy Dungeonman (Apple II/IIe demake)",
+        "description": "A demake of Thy Dungeonman for Apple II and Apple II Enhanced. Thy Dungeonman is a flash game that parodies traditional text adventure games.",
+        "urls": [
+            {"url": "https://github.com/Eggbertx/ThyDungeonman-Demake", "text": "GitHub Repo"},
+            {"url": "https://homestarrunner.com/dungeonman", "text": "Original Game"}
+        ],
+        "languageDetails": "C",
+        "thumb": "/images/thy-dungeonman-demake.png"
+    },
+    {
+        "name": "Simple 3D Raycaster",
+        "description": "A simple project to teach myself how to do traditional Wolfenstein 3D style raycasting, as well as CMake usage",
+        "urls": [
+            {"url": "https://github.com/Eggbertx/simple-3d-raycaster", "text": "GitHub Repo"}
+        ],
+        "languageDetails": "C",
+        "thumb": "/images/simple3draycaster.gif"
     }
 ]

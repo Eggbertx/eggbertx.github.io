@@ -1,18 +1,24 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
-import PageHeader from '../components/PageHeader.astro';
-import PageFooter from '../components/PageFooter.astro';
-
+import BaseLayout from "../layouts/BaseLayout.astro";
+import PageHeader from "../components/PageHeader.astro";
+import PageFooter from "../components/PageFooter.astro";
+import ProjectCard from "../components/ProjectCard.astro";
 import "../styles/global.css";
 
-const pageTitle = 'My Projects';
+const pageTitle = "My Projects";
 
-import projects from '../data/projects.json';
+import type { Project } from "../../types/types";
+
+const projects = (await import("../data/projects.json")).default as Project[];
 
 ---
 
 <BaseLayout pageTitle={pageTitle}>
 	<PageHeader pageTitle={pageTitle} />
-		
+	<main>
+		{projects.map(project => {
+			return <ProjectCard project={project} />
+		})}
+	</main>
 	<PageFooter />
 </BaseLayout>

@@ -1,0 +1,26 @@
+---
+import type { Project } from "../../types/types"
+
+
+const project:Project = Astro.props.project;
+project.urls ??= [];
+---
+
+<section class="project-card">
+	<div class="name-description">
+		<h2>{project.name}</h2>
+		<p>{project.description}</p>
+	</div>
+	<div class="project-urls">
+		{"Link" + ((project.urls.length > 1)?"s":"")}: {project.urls.map((link,i) => (
+			<a href={link.url} target="_blank">{link.text}</a><span class="separator">{i < project.urls.length - 1 ? "|" : ""}</span>
+		))}
+	</div>
+
+	{project.thumb && (
+		<img src={project.thumb} alt={`Thumbnail for ${project.name}`} />
+	)}
+	{project.languageDetails && (
+		<hr/><span class="language-details">Language: {project.languageDetails}</span>
+	)}
+</section>
