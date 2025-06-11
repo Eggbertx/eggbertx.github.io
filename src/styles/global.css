@@ -1,57 +1,94 @@
+/* diagnostic styling */
+/* * {
+	border: 1px dashed gray;
+} */
+
+:root {
+	--link-col: hsl(0, 0%, 36%);
+	--link-col-hover: gray;
+}
+
 body {
-    font-family: sans-serif;
-    background: cornflowerblue;
+	font-family: sans-serif;
+	background: cornflowerblue;
 }
 
 a {
-    text-decoration: none;
+	text-decoration: none;
+	color: var(--link-col);
+	font-weight: bold;
+
+	&:hover, &:active {
+		color: var(--link-col-hover);
+	}
+	&:visited {
+		color: var(--link-col);
+	}
 }
 
 header, footer, .project-card h2 {
-    text-align: center;
+	text-align: center;
 }
 
 main {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto 1fr auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: auto 1fr auto;
+}
+
+main.error-page {
+	text-align: center;
+	display: block;
+	padding-bottom: 2em;
 }
 
 main section.project-card {
-    border: 1px solid #ccc;
-    padding: 1rem;
-    margin: 1rem;
-    border-radius: 8px;
-    background-color: #f9f9f9;
-    display: grid;
-    grid-template-rows: auto 1fr auto;
+	border: 1px solid #ccc;
+	padding: 1rem;
+	margin: 1rem;
+	border-radius: 8px;
+	background-color: #f9f9f9;
+	display: grid;
+	grid-template-rows: auto 1fr auto;
 
-    .project-urls {
-        padding-bottom: 1em;
-    }
+	hr {
+		border-color: lightgray;
+	}
 
-    hr {
-        border-color: lightgray;
-    }
+	img {
+		display: block;
+		max-width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+		max-height: 400px;
+		padding: 0.5rem;
+	}
 
-    img {
-        display: block;
-        max-width: 100%;
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-        max-height: 400px;
-    }
+	ul.project-urls {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+		list-style: none;
+		text-align: center;
+		padding: 0;
+		margin: 0.5rem 0;
+	}
+	img {
+		vertical-align: top;
+	}
+	.language-details {
+		border-top: 1px solid darkgray;
+		padding-top: 0.5rem;
+	}
 }
 
 @media (max-width: 850px) {
-    main {
-        grid-template-columns: 1fr 1fr;
-    }
+	main {
+		grid-template-columns: 1fr 1fr;
+	}
 }
 
 @media (max-width: 550px) {
-    main {
-        grid-template-columns: 1fr;
-    }
+	main {
+		grid-template-columns: 1fr;
+	}
 }

@@ -11,11 +11,11 @@ project.urls ??= [];
 		<h2>{project.name}</h2>
 		<p>{project.description}</p>
 	</div>
-	<div class="project-urls">
-		{"Link" + ((project.urls.length > 1)?"s":"")}: {project.urls.map((link,i) => (
-			<a href={link.url} target="_blank">{link.text}</a><span class="separator">{i < project.urls.length - 1 ? "|" : ""}</span>
+	<ul class="project-urls">
+		{project.urls.map((link,i) => (
+			<li><a href={link.url} target="_blank">{link.text}</a></li>
 		))}
-	</div>
+	</ul>
 
 	{project.thumb && (
 		<img src={project.thumb} alt={`Thumbnail for ${project.name}`} />
