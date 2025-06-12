@@ -33,7 +33,7 @@ header, footer, .project-card h2 {
 main {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-rows: auto 1fr auto;
+	grid-template-rows: repeat(auto-fit, 1fr);
 }
 
 main.error-page {
@@ -42,44 +42,6 @@ main.error-page {
 	padding-bottom: 2em;
 }
 
-main section.project-card {
-	border: 1px solid #ccc;
-	padding: 1rem;
-	margin: 1rem;
-	border-radius: 8px;
-	background-color: #f9f9f9;
-	display: grid;
-	grid-template-rows: auto 1fr auto;
-
-	hr {
-		border-color: lightgray;
-	}
-
-	img {
-		display: block;
-		max-width: 100%;
-		margin-left: auto;
-		margin-right: auto;
-		max-height: 400px;
-		padding: 0.5rem;
-	}
-
-	ul.project-urls {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-		list-style: none;
-		text-align: center;
-		padding: 0;
-		margin: 0.5rem 0;
-	}
-	img {
-		vertical-align: top;
-	}
-	.language-details {
-		border-top: 1px solid darkgray;
-		padding-top: 0.5rem;
-	}
-}
 
 @media (max-width: 850px) {
 	main {

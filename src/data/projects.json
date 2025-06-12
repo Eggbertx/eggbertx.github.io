@@ -1,7 +1,7 @@
 [
     {
         "name": "Gochan",
-        "description": "A semi-standalone Futaba-style imageboard server written in Go",
+        "description": "A semi-standalone Futaba-style imageboard server written in Go. Gochan is designed to be highly configurable, with video embed support, post filters, Go and Lua plugins, etc.",
         "urls": [
             {"url": "https://github.com/gochan-org/gochan", "text": "Repo"},
             {"url": "https://gochan.org/", "text": "Website"}
@@ -65,5 +65,21 @@
         ],
         "languageDetails": "C",
         "thumb": "/images/simple3draycaster.gif"
+    },
+    {
+        "name": "Territories Game",
+        "description": "A package and sample program that manages a Risk-style territorial conquest game. It is not yet ready for public use, but it is a work in progress.",
+        "urls": [
+            {"url": "https://github.com/Eggbertx/territories-game", "text": "GitHub Repo"}
+        ],
+        "languageDetails": "Go"
+    },
+    {
+        "name": "go-forms",
+        "description": "A package for simplifying validating and parsing HTTP forms into Go structs ",
+        "urls": [
+            {"url": "https://github.com/Eggbertx/go-forms", "text": "GitHub Repo"}
+        ],
+        "languageDetails": "Go"
     }
 ]
