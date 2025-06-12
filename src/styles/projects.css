@@ -4,7 +4,7 @@
 
 .cards-container section.project-card {
 	display: grid;
-	grid-template-rows: repeat(auto-fit, 1fr);
+	grid-template-rows: auto auto 1fr;
 
 	hr {
 		border-color: lightgray;
@@ -12,7 +12,7 @@
 
 	img {
 		display: block;
-		max-width: 100%;
+		max-width: 90%;
 		margin: 0 auto;
 		max-height: 400px;
 		padding: 0.5rem;
@@ -24,22 +24,35 @@
 		list-style: none;
 		text-align: center;
 		padding: 0;
-		margin: 0.5rem 0;
+		margin: 0;
+
+		li {
+			place-content: center;
+			a {
+				display: inline-block;
+				padding-top: 0.5em;
+				padding-bottom: 0.5em;
+				width: 100%;
+				&:hover {
+					background-color: hsl(0, 0%, 91%);
+					color: hsl(0, 0%, 15%);
+					transition: ease-in-out 0.2s;
+				}
+			}
+		}
 	}
 	img {
 		vertical-align: top;
 	}
 	.no-thumb {
+		display: flex;
 		font-style: italic;
 		color: gray;
-
-		display: flex;
 		align-items: center;
 		justify-content: center;
 		height: 300px;
 		max-width: 500px;
 		place-self: center;
-		/* border: 1px dashed gray; */
 	}
 	.language-details {
 		border-top: 1px solid darkgray;
@@ -52,7 +65,7 @@
 	.cards-container {
 		grid-template-columns: 1fr 1fr;
 
-		section.bordered:first-of-type {
+		section.bordered.intro {
 			grid-column: span 2;
 		}
 	}
@@ -66,5 +79,4 @@
 			grid-column: span 1;
 		}
 	}
-
 }

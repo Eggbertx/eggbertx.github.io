@@ -19,6 +19,7 @@ section.bordered {
 	margin: 1rem;
 	border-radius: 8px;
 	background-color: #f9f9f9;
+	filter: drop-shadow(4px 4px 4px #00000033);
 }
 
 a {

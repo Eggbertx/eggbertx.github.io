@@ -3,7 +3,7 @@
         "name": "Gochan",
         "description": "A semi-standalone Futaba-style imageboard server written in Go. Gochan is designed to be highly configurable, with video embed support, post filters, Go and Lua plugins, etc.",
         "urls": [
-            {"url": "https://github.com/gochan-org/gochan", "text": "Repo"},
+            {"url": "https://github.com/gochan-org/gochan", "text": "GitHub Repo"},
             {"url": "https://gochan.org/", "text": "Website"}
         ],
         "languageDetails": "Go (server), HTML (templates), TypeScript, and SCSS",
