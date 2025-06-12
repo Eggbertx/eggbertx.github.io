@@ -13,6 +13,14 @@ body {
 	background: cornflowerblue;
 }
 
+section.bordered {
+	border: 2px solid black;
+	padding: 1rem;
+	margin: 1rem;
+	border-radius: 8px;
+	background-color: #f9f9f9;
+}
+
 a {
 	text-decoration: none;
 	color: var(--link-col);
@@ -30,7 +38,7 @@ header, footer, .project-card h2 {
 	text-align: center;
 }
 
-main {
+.cards-container {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: repeat(auto-fit, 1fr);
@@ -40,17 +48,20 @@ main.error-page {
 	text-align: center;
 	display: block;
 	padding-bottom: 2em;
+	section.bordered {
+		display: inline-block;
+	}
 }
 
 
 @media (max-width: 850px) {
-	main {
+	.cards-container {
 		grid-template-columns: 1fr 1fr;
 	}
 }
 
 @media (max-width: 550px) {
-	main {
+	.cards-container {
 		grid-template-columns: 1fr;
 	}
 }

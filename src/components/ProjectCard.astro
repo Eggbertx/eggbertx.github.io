@@ -6,7 +6,7 @@ const project:Project = Astro.props.project;
 project.urls ??= [];
 ---
 
-<section class="project-card">
+<section class="project-card bordered">
 	<div class="name-description">
 		<h2>{project.name}</h2>
 		<p>{project.description}</p>

@@ -21,9 +21,9 @@ section.oc8-player {
 	}
 }
 
-.oc8-info {
+section.oc8-info {
 	max-width: 50%;
-	margin: 0 auto;
+	margin: 1em auto 1em;
 	text-align: left;
 	h2,h3 {
 		text-align: center;

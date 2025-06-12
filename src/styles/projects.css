@@ -1,9 +1,8 @@
-main section.project-card {
-	border: 2px solid black;
-	padding: 1rem;
-	margin: 1rem;
-	border-radius: 8px;
-	background-color: #f9f9f9;
+.cards-container section.bordered:first-of-type {
+	grid-column: span 3;;
+}
+
+.cards-container section.project-card {
 	display: grid;
 	grid-template-rows: repeat(auto-fit, 1fr);
 
