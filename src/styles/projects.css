@@ -1,5 +1,5 @@
 .cards-container section.bordered:first-of-type {
-	grid-column: span 3;;
+	grid-column: span 3;
 }
 
 .cards-container section.project-card {
@@ -45,4 +45,26 @@
 		border-top: 1px solid darkgray;
 		padding-top: 0.5rem;
 	}
+}
+
+
+@media (max-width: 865px) {
+	.cards-container {
+		grid-template-columns: 1fr 1fr;
+
+		section.bordered:first-of-type {
+			grid-column: span 2;
+		}
+	}
+}
+
+@media (max-width: 600px) {
+	.cards-container {
+		grid-template-columns: 1fr;
+
+		section.bordered:first-of-type {
+			grid-column: span 1;
+		}
+	}
+
 }
