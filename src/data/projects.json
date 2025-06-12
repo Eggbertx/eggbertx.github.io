@@ -76,7 +76,7 @@
     },
     {
         "name": "go-forms",
-        "description": "A package for simplifying validating and parsing HTTP forms into Go structs ",
+        "description": "A package for simplifying validation and parsing HTTP forms into Go structs ",
         "urls": [
             {"url": "https://github.com/Eggbertx/go-forms", "text": "GitHub Repo"}
         ],

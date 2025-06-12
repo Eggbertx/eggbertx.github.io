@@ -5,23 +5,13 @@ import PageFooter from "../components/PageFooter.astro";
 
 import "../styles/global.css";
 
-let pageTitle = "404 - Page Not Found";
-
-const requestedURL = new URL(Astro.request.url);
-const secret = import.meta.env.SECRET;
-const showSecret = requestedURL.pathname === "/checkcheck" && secret;
-let message = "The page you are looking for does not exist.";
-
-if(showSecret) {
-	pageTitle = "Check Check";
-	message = secret;
-}
+const pageTitle = "404 - Page Not Found";
 ---
 
 <BaseLayout pageTitle={pageTitle}>
 	<PageHeader pageTitle={pageTitle} />
 	<main class="error-page">
-		{message}
+		The page you are looking for does not exist. Try going back to the <a href="/">homepage</a> or check the URL for errors.
 	</main>
 	<PageFooter />
 </BaseLayout>

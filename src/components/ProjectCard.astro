@@ -17,10 +17,11 @@ project.urls ??= [];
 		))}
 	</ul>
 
-	{project.thumb && (
-		<img src={project.thumb} alt={`Thumbnail for ${project.name}`} />
-	)}
+	{project.thumb?
+		<img src={project.thumb} alt={`Thumbnail for ${project.name}`} />:
+		<div class="no-thumb"></div>
+	}
 	{project.languageDetails && (
-		<hr/><span class="language-details">Language: {project.languageDetails}</span>
+		<span class="language-details">Language: {project.languageDetails}</span>
 	)}
 </section>

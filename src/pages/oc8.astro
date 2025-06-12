@@ -17,6 +17,66 @@ const pageTitle = "OmniChip-8 Demo";
 			<canvas id="canvas" width="64" height="32" oncontextmenu="event.preventDefault()"></canvas>
 			<textarea id="output" rows="8" cols="60"></textarea>
 		</section>
+		<section class="oc8-info">
+			<h2>Info</h2>
+			OmniChip-8 is a <a href="https://en.wikipedia.org/wiki/CHIP-8" target="_blank">CHIP-8</a> emulator written in C, designed to be as cross platform as possible. You can play it here in the browser thanks to <a href="https://emscripten.org/" target="_blank">Emscripten</a>. Currently, the only loaded ROM is Pong, though I plan to eventually add more and allow uploading your own. The CHIP-8 has a 16-key keypad, which is represented on your keyboard as follows:
+			<div class="keypad-compare">
+				<h3>CHIP-8</h3>
+				<h3>Keyboard</h3>
+				<table class="keys">
+					<tr>
+						<td>1</td>
+						<td>2</td>
+						<td>3</td>
+						<td>C</td>
+					</tr>
+					<tr>
+						<td>4</td>
+						<td>5</td>
+						<td>6</td>
+						<td>D</td>
+					</tr>
+					<tr>
+						<td>7</td>
+						<td>8</td>
+						<td>9</td>
+						<td>E</td>
+					</tr>
+					<tr>
+						<td>A</td>
+						<td>B</td>
+						<td>C</td>
+						<td>F</td>
+					</tr>
+				</table>
+				<table class="keys">
+					<tr>
+						<td>1</td>
+						<td>2</td>
+						<td>3</td>
+						<td>4</td>
+					</tr>
+					<tr>
+						<td>Q</td>
+						<td>W</td>
+						<td>E</td>
+						<td>R</td>
+					</tr>
+					<tr>
+						<td>A</td>
+						<td>S</td>
+						<td>D</td>
+						<td>F</td>
+					</tr>
+					<tr>
+						<td>Z</td>
+						<td>X</td>
+						<td>C</td>
+						<td>V</td>
+					</tr>
+				</table>
+			</div>
+		</section>
 		<script is:inline type="text/javascript" defer>
 		var Module = {
 			print: (function(text) {
