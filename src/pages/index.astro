@@ -25,9 +25,7 @@ const projects = (await import("../data/projects.json")).default as Project[];
 				<p>Welcome to my projects page! Here you can find a collection of my work, including games and other neat stuff. Currently, only OmniChip-8 has a web version, though others may come soon/eventually.</p>
 				<p>I am proficient in Go, JavaScript, TypeScript, Python, C#, and SQL, and familiar with C, C++, and 6502 assembly.</p>
 			</section>
-			{projects.map(project => {
-				return <ProjectCard project={project} />
-			})}
+			{projects.map(project => <ProjectCard project={project} />)}
 		</article>
 	</main>
 	<PageFooter />
